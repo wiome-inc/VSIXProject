@@ -1,9 +1,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="VSIXProject1.f8e787b9-9b8c-4f51-a6be-8143d1e88651" Version="1.0" Language="en-US" Publisher="ZHANG Zhengxuan" />
+    <Identity Id="VSIXProject1.f8e787b9-9b8c-4f51-a6be-8143d1e88651" Version="1.0" Language="en-US" Publisher="WioME" />
     <DisplayName>Git工程文件导出插件</DisplayName>
     <Description xml:space="preserve">将打开的.git工程文件导出到指定目录</Description>
-    <Tags>0.1</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

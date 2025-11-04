@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidExportPackage">
+    <Groups>
+      <Group guid="guidExportPackageCmdSet" id="MenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidExportPackageCmdSet" id="ExportCommand" priority="0x0100" type="Button">
+        <Parent guid="guidExportPackageCmdSet" id="MenuGroup" />
+        <Strings>
+          <ButtonText>导出项目文件到ZIP</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidExportPackage" value="{e6de4d4a-3090-4508-bf50-5a266ba36f79}" />
+    
+    <GuidSymbol name="guidExportPackageCmdSet" value="{e6de4d4a-3090-4508-bf50-5a266ba36f79}">
+      <IDSymbol name="MenuGroup" value="0x1020" />
+      <IDSymbol name="ExportCommand" value="0x0100" />
+    </GuidSymbol>
+    
+    <GuidSymbol name="guidSHLMainMenu" value="{d309f791-903f-11d0-9efc-00a0c911004f}">
+      <IDSymbol name="IDM_VS_MENU_TOOLS" value="0x0085" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
